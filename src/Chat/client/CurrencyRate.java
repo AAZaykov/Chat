@@ -32,8 +32,8 @@ public class CurrencyRate {
                 e.printStackTrace();
             }
         }
-        double rubUsd = obj.getJSONObject("rates").getDouble(currency.toUpperCase());
-        double usdRub = 1 / rubUsd;
-        return String.format("%.4f", usdRub);
+        double rubCurr = obj.getJSONObject("rates").getDouble(currency.toUpperCase());
+        double currRub = 1 / rubCurr;
+        return String.format("%.4f", currRub);
     }
 }
