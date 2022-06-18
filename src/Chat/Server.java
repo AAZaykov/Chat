@@ -32,7 +32,7 @@ public class Server {
         }
 
         private String serverHandshake(Connection connection) throws IOException, ClassNotFoundException {
-            String clientName = null;
+
             Message message;
             do {
                 connection.send(new Message(MessageType.NAME_REQUEST));
